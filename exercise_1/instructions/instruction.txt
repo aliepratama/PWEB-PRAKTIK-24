@@ -1,0 +1,29 @@
+Blog Creation Challenge: Basic HTML Website
+
+Objective:
+Create a simple, static blog website using HTML5. The site should have a clean, readable layout and use semantic HTML tags appropriately.
+--------
+Requirements:
+1. HTML File:
+Create a single HTML file named blog.html.
+2. Page Structure:
+Use the HTML5 doctype.
+Your page should include the following semantic elements: <header>, <footer>, <main>, and <article> tags.
+3. Header:
+The <header> should contain the title of your blog and a brief introduction or tagline.
+4. Main Content Area:
+Use the <main> tag to enclose the blog content.
+Inside <main>, include at least two <article> elements representing individual blog posts.
+5. Each <article> should have:
+A headline wrapped in an <h2> tag.
+A publication date in a <p> tag.
+A main content paragraph.
+A figure with an image and a <figcaption>. Ensure images have appropriate alt text.
+6. List:
+Include at least one unordered (<ul>) or ordered (<ol>) list in one of the articles, summarizing key points or topics covered in the blog post.
+7. Footer:
+The <footer> should contain copyright information.
+8. Style (Optional):
+While CSS styling is not required, you may add a simple internal or external stylesheet to improve the visual layout.
+9. Images:
+Source at least two images relevant to your blog content. These should be used within your <figure> elements.

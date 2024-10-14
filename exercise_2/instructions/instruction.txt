@@ -1,0 +1,28 @@
+Flexbox Card Layout Challenge
+
+Objective:
+Develop a responsive card layout using HTML and CSS Flexbox. Each card should include an image, a title, and a description
+--------
+Requirements:
+1. HTML and CSS Files:
+Create a single HTML file and a separate CSS file or include the CSS in a <style> tag within the HTML file.
+2. Flexbox Container:
+Use a <div> element as a container for your cards and apply Flexbox styles to manage the layout.
+3. Card Design:
+Each card should be a <div> element with class card.
+Include an <img> element for the image, an <h3> for the title, and a <p> for the description.
+Ensure the image sources are valid or use placeholder images.
+4. Responsive Layout:
+The card container should use display: flex;.
+Ensure the layout is responsive using flex-wrap to allow cards to wrap on smaller screens.
+Use justify-content to manage spacing between and around cards.
+5. Styling:
+Cards should have a consistent width and margin.
+Apply a box-shadow to elevate the cards visually.
+Ensure text alignment and padding are aesthetically pleasing.
+6. Accessibility:
+Ensure all images have appropriate alt attributes.
+Follow semantic HTML practices where possible.
+7. Additional Features (Optional):
+Add hover effects to cards for interactivity.
+Include a footer or header with additional information or navigation links.
