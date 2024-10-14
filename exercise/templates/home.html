@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %}
+<table>
+  <thead>
+    <th>
+        <td>id</td>
+        <td>judul</td>
+        <td>penulis</td>
+        <td>tindakan</td>
+    </th>
+  </thead>
+  <tbody>
+    {% for book in books %}
+    <tr>
+      <td>{{ book["id"] }}</td>
+      <td>{{ book["title"] }}</td>
+      <td>{{ book["author"] }}</td>
+      <td>
+        <a href="hapus/{{ book['id'] }}">Hapus</a>
+        <a href="edit/{{ book['id'] }}">Edit</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<a href="{{ url_for('tambah_buku') }}">Tambah buku</a>
+{% endblock %}
