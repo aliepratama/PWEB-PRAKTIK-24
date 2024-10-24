@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block notification %} 
+{% for notif in get_flashed_messages() %} 
+    <span>{{ notif }}</span>
+{% endfor %}
+{% endblock %}
+
+{% block content %}
+<h1>Masuk</h1>
+<form method="post">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" />
+    <label for="password">Kata sandi</label>
+    <input type="password" name="password" id="password" />
+    <input type="submit" value="Masuk" />
+</form>
+<a href="{{ url_for('register') }}">Belum punya akun? Daftar</a>
+{% endblock %}

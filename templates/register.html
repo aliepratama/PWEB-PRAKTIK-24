@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block notification %}
+{% for notif in get_flashed_messages() %} 
+    <span>{{ notif }}</span>
+{% endfor %}
+{% endblock %}
+
+{% block content %}
+<h1>Daftar</h1>
+<form method="post">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" />
+    <label for="password">Kata sandi</label>
+    <input type="password" name="password" id="password" />
+    <label for="conf_password">Konfirmasi Kata sandi</label>
+    <input type="password" name="conf_password" id="conf_password" />
+    <input type="submit" value="Daftar" />
+</form>
+<a href="{{ url_for('login') }}">Sudah punya akun? Masuk</a>
+{% endblock %}

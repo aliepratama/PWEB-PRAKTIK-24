@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block content %}
+<form method="post">
+  <label for="title">Judul Buku</label>
+  <input type="text" name="title" id="title" value="{{ title }}" />
+  <label for="author">Penulis Buku</label>
+  <input type="text" name="author" id="author" value="{{ author }}" />
+  <input type="submit" value="Simpan Perubahan" />
+</form>
+{% endblock %}
