@@ -13,3 +13,16 @@ Mata kuliah yang mengimplementasi konsep dasar web services menggunakan framewor
 2. Kelas: X
 - Jadwal: 12:50 – 16:20
 - Ruangan: K1-LK1.1
+
+
+### Instalasi
+Instalasi modul yang digunakan
+```shell
+python -m venv myenv
+myenv\scripts\activate.bat
+pip install -r requirements.txt
+```
+Instalasi database yang digunakan
+```shell
+mysql -u root -p < db_books.sql
+```
