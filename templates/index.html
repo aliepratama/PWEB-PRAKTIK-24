@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="display: flex; flex-direction: row; flex-wrap: wrap;padding: 40px; justify-content: center; gap: 20px">
+    {% for event in events %}
+    <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{ event.event_title }}</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">{{ event.participants }} Partisipan</h6>
+          <p class="card-text">{{ event.description }}</p>
+          <div style="display: flex; flex-direction: column;">
+              <span>
+                <i class="bi bi-geo-alt-fill"></i> {{ event.location }}
+              </span>
+              <span>
+                <i class="bi bi-calendar-event"></i> {{ event.date }}
+              </span>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+</div>
+<div style="display: flex; flex-direction: row; width: 100%; justify-content: center; padding: 20px; gap: 20px">
+    <a href="{{ url_for('login') }}" class="btn btn-outline-primary">Daftar Event sekarang juga!</a>
+</div>
+{% endblock %}

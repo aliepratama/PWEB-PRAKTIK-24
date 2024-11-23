@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block notification %}
+{% for notif in get_flashed_messages() %} 
+    <div class="alert alert-info" role="alert">
+        <span>{{ notif }}</span>
+    </div>
+{% endfor %}
+{% endblock %}
+
+{% block content %}
+<div class="alert alert-light" role="alert">
+    Anda memiliki kuota pemilihan sebanyak {{ user.quota }} kali
+</div>
+<div style="display: flex; flex-direction: row; flex-wrap: wrap;padding: 40px; justify-content: center; gap: 20px">
+    {% for event in events %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{ event.event_title }}</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">{{ event.participants }} Partisipan</h6>
+          <p class="card-text">{{ event.description }}</p>
+          <div style="display: flex; flex-direction: column;">
+                <span>
+                <i class="bi bi-geo-alt-fill"></i> {{ event.location }}
+                </span>
+                <span>
+                <i class="bi bi-calendar-event"></i> {{ event.date }}
+                </span>
+            </div>
+          <a href="{{ url_for('booking', event_id=event.id) }}" class="btn btn-primary">Pilih</a>
+        </div>
+      </div>
+    {% endfor %}
+</div>
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <h2 style="text-align: center;">Daftar Tiket yang dibeli</h2>
+    <table class="table" style="width: 75%;">
+        <thead>
+          <tr>
+            <th scope="col">Nama Event</th>
+            <th scope="col">Tanggal Acara</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for booking in bookings %}
+                <tr>
+                    <th scope="row">{{ booking.event_title }}</th>
+                    <td>{{ booking.date }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div style="display: flex; flex-direction: row; width: 100%; justify-content: center; padding: 20px; gap: 20px">
+    <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">Keluar akun</a>
+</div>
+{% endblock %}
