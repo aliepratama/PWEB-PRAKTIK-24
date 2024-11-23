@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block notification %}
+{% for notif in get_flashed_messages() %} 
+    <div class="alert alert-info" role="alert">
+        <span>{{ notif }}</span>
+    </div>
+{% endfor %}
+{% endblock %}
+
+{% block content %}
+<div style="display: flex; flex-direction: row; flex-wrap: wrap;padding: 40px; justify-content: center; gap: 20px">
+    {% for candidate in candidates %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{ candidate.name }}</h5>
+          <p class="card-text">{{ candidate.description }}</p>
+          <a href="{{ url_for('vote', candidate_id=candidate.id) }}" clas   s="btn btn-primary">Pilih</a>
+        </div>
+      </div>
+    {% endfor %}
+</div>
+<div style="display: flex; flex-direction: row; width: 100%; justify-content: center; padding: 20px; gap: 20px">
+    <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">Keluar akun</a>
+</div>
+{% endblock %}

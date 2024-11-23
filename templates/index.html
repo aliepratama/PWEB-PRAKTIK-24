@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="display: flex; flex-direction: row; flex-wrap: wrap;padding: 40px; justify-content: center; gap: 20px">
+    {% for candidate in candidates %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{ candidate.name }}</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">{{ candidate.vote_count }} Suara</h6>
+          <p class="card-text">{{ candidate.description }}</p>
+        </div>
+      </div>
+    {% endfor %}
+</div>
+<div style="display: flex; flex-direction: row; width: 100%; justify-content: center; padding: 20px; gap: 20px">
+    <a href="{{ url_for('login') }}" class="btn btn-outline-primary">Gunakan hak pilihmu sekarang juga!</a>
+</div>
+{% endblock %}

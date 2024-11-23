@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block notification %}
+{% for notif in get_flashed_messages() %} 
+    <div class="alert alert-info" role="alert">
+        <span>{{ notif }}</span>
+    </div>
+{% endfor %}
+{% endblock %}
+
+{% block content %}
+<div style="padding: 40px;">
+    <div class="card">
+        <div class="card-header">
+          Daftar
+        </div>
+        <div class="card-body">
+          <form method="post">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Kata Sandi</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                </div>
+                <div class="mb-3">
+                    <label for="conf_password" class="form-label">Konfirmasi Kata Sandi</label>
+                    <input type="password" class="form-control" id="conf_password" name="conf_password">
+                </div>
+                <button type="submit" class="btn btn-primary">Daftar</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div style="display: flex; flex-direction: row; width: 100%; justify-content: center; padding: 20px; gap: 20px">
+        <a href="{{ url_for('index') }}" class="btn btn-outline-primary">Lihat perhitungan suara</a>
+        <a href="{{ url_for('login') }}" class="btn btn-outline-primary">Sudah punya akun? Masuk</a>
+</div>
+{% endblock %}
