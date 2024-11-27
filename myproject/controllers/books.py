@@ -45,6 +45,6 @@ def create_book() -> str | Response:
     if request.method == 'POST':
         title = request.form['title']
         author = request.form['author']
-        create_book(title, author)
+        insert_book(title, author)
         return redirect(url_for('index'))
     return render_template('add_book.html')
