@@ -34,7 +34,7 @@ def get_all_books_desc() -> tuple[tuple[any]]:
     return books
 
 
-def create_book(title: str, author: str) -> None:
+def insert_book(title: str, author: str) -> None:
     """
     Menambahkan buku dengan title dan author
     """
@@ -44,7 +44,6 @@ def create_book(title: str, author: str) -> None:
         (title, author))
     mysql.connection.commit()
     cur.close()
-
 
 def edit_book_by_id(id: int, title: str, author: str) -> None:
     """

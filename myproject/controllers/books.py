@@ -1,5 +1,5 @@
 from flask import render_template, request, redirect, url_for, Response
-from myproject.models.books import get_all_books_asc, get_all_books_desc, create_book, edit_book_by_id, delete_book_by_id, get_book_by_id
+from myproject.models.books import get_all_books_asc, get_all_books_desc, insert_book, edit_book_by_id, delete_book_by_id, get_book_by_id
 
 
 def get_books() -> str:
@@ -45,6 +45,6 @@ def create_book() -> str | Response:
     if request.method == 'POST':
         title = request.form['title']
         author = request.form['author']
-        create_book(title, author)
+        insert_book(title, author)
         return redirect(url_for('index'))
     return render_template('add_book.html')
