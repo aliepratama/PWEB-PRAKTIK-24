@@ -25,3 +25,4 @@ Mata kuliah yang mengimplementasi konsep dasar web services menggunakan framewor
 - **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-7-responsi-ix">Week 7:</a>** Solusi Responsi pada kelas IX
 - **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-7-responsi-x">Week 7:</a>** Solusi Responsi pada kelas X
 - **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-8">Week 8:</a>** Penerapan MVC pada Flask
+- **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-9">Week 9:</a>** REST API pada Flask
