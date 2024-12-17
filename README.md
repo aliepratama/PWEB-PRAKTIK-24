@@ -14,17 +14,16 @@ Mata kuliah yang mengimplementasi konsep dasar web services menggunakan framewor
 - Jadwal: 12:50 – 16:20
 - Ruangan: K1-LK1.1
 
-### Materi
 
-- **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-1">Week 1:</a>** Perkenalan, Silabus, Pengenalan Konsep web dan server
-- **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-2">Week 2:</a>** Dasar UI/UX Design, Instalasi Flask
-- **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-3">Week 3:</a>** Integrasi, HTML & CSS Dasar
-- **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-4">Week 4:</a>** Integrasi Flask View Template
-- **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-5">Week 5:</a>** Integrasi Flask MySQL
-- **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-6">Week 6:</a>** Penerapan Session pada Flask
-- **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-7-responsi-ix">Week 7:</a>** Solusi Responsi pada kelas IX
-- **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-7-responsi-x">Week 7:</a>** Solusi Responsi pada kelas X
-- **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-8">Week 8:</a>** Penerapan MVC pada Flask
-- **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-9">Week 9:</a>** REST API pada Flask
-- **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-10">Week 10:</a>** Database Migration
-- **<a href="https://github.com/aliepratama/PWEB-PRAKTIK-24/tree/week-11">Week 11:</a>** Flask Blueprint and API Management
+### Instalasi
+Instalasi modul yang digunakan
+```shell
+python -m venv myenv
+myenv\scripts\activate.bat
+pip install -r requirements.txt
+```
+Mengaplikasikan skema pertama
+```shell
+flask db upgrade
+```
+Lalu anda dapat mengerjakan challenge yang telah disediakan, **Selamat mengerjakan!**
