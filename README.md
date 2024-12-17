@@ -27,3 +27,6 @@ Mengaplikasikan skema pertama
 flask db upgrade
 ```
 Lalu anda dapat mengerjakan challenge yang telah disediakan, **Selamat mengerjakan!**
+
+### Data example
+Gunakan users email: `admin@example.com` dengan password: `admin1234#` dan email: `user@example.com` dengan password: `user123`.
