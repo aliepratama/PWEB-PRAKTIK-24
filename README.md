@@ -27,3 +27,42 @@ Mengaplikasikan skema pertama
 flask db upgrade
 ```
 Lalu anda dapat mengerjakan challenge yang telah disediakan, **Selamat mengerjakan!**
+
+### Data example
+Gunakan users email: `admin@example.com` dengan password: `admin1234#` dan email: `user@example.com` dengan password: `user123`.# Pemrograman Web Praktik
+### Dosen Pengampu: Endang Anggiratih, S.T., M.Cs.
+### Asisten Dosen: Ali Pratama
+
+Mata kuliah yang mengimplementasi konsep dasar web services menggunakan framework Flask
+
+### Jadwal Kelas
+#### Kelas IX
+- Jadwal: 07:00 – 10:30
+- Ruangan: K1-LK2.1
+
+#### Kelas X
+- Jadwal: 12:50 – 16:20
+- Ruangan: K1-LK1.1
+
+### Instalasi
+#### Langkah Instalasi
+1. Buat virtual environment
+```shell
+python -m venv myenv
+```
+2. Aktifkan virtual environment
+```shell
+myenv\scripts\activate.bat
+```
+3. Instal modul yang digunakan
+```shell
+pip install -r requirements.txt
+```
+#### Mengaplikasikan Skema Pertama
+```shell
+flask db upgrade
+```
+Lalu anda dapat mengerjakan challenge yang telah disediakan, **Selamat mengerjakan!**
+
+### Data Contoh
+Gunakan users email: `admin@example.com` dengan password: `admin1234#` dan email: `user@example.com` dengan password: `user123`.
